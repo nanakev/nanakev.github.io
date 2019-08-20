@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Nana & Kevin
 logo: /assets/img/logo.jpg
+plugins:
+  - jekyll-redirect-from
