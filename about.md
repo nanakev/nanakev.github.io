@@ -1,10 +1,11 @@
 ---
 layout: default
 redirect_from: "./"
+namespace: about
+permalink: /about-us/
+permalink_de: /ueber-uns/
 ---
 
-## Welcome to another page
-
-_yay_
+{% tf about.md %}
 
 [back](./)
