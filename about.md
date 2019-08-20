@@ -1,6 +1,6 @@
 ---
 layout: default
-redirect_from: "/index/"
+redirect_from: "./"
 ---
 
 ## Welcome to another page
