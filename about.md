@@ -1,21 +1,21 @@
 ---
-layout: default
-redirect_from: "./"
-namespace: about
-permalink: /about-us/
-permalink_de: /ueber-uns/
+layout: page
+title: About
+permalink: /about/
+ref: about
+lang: en
 ---
 
-<ul class="post-list">
-    {% assign posts=site.posts | where:"lang", page.lang %}
-    {% for post in posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-</ul>
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
+You can find this multilanguage theme at :
+{% include icon-github.html username="sylvaindurand" %} /
+[multilingual-jekyll](https://github.com/sylvaindurand/multilingual-jekyll)
 
-[back](./)
+You can find the original source code for the Jekyll new theme at:
+{% include icon-github.html username="jglovier" %} /
+[jekyll-new](https://github.com/jglovier/jekyll-new)
+
+You can find the source code for Jekyll at
+{% include icon-github.html username="jekyll" %} /
+[jekyll](https://github.com/jekyll/jekyll)
