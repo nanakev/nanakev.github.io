@@ -2,10 +2,15 @@ theme: jekyll-theme-minimal
 logo: /assets/img/logo.jpg
 plugins:
   - jekyll-redirect-from
-  - jekyll-multiple-languages-plugin
-languages: ["en", "de"]
-exclude_from_localizations: ["assets", "CNAME"]
-defaultLang: en
-languageNames:
-  de: Deutsch
-  en: English
+title:
+  de: Willkommen! :)
+  en: Welcome! :)
+about:
+  de: Über Uns
+  en: About Us
+computer:
+  de: Informatik
+  en: Computer Science
+cosplay:
+  de: Cosplay
+  en: Cosplay
