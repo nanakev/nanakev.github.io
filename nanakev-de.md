@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Über
-ref: about
+title: Nana & Kev
+ref: nana-kev
 lang: de
 ---
 

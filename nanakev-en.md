@@ -1,8 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
-ref: about
+title: Nana & Kev
+ref: nana-kev
 lang: en
 ---
 
