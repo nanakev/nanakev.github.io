@@ -17,6 +17,7 @@ lang: en
         <h2>
           <a class="post-link" href="{{ post.url}}">{{ post.title }}</a>
         </h2>
+        <a class="post-meta" href="{{ site.url }}/{{post.lang}}/{{post.categorie}}">{{ post.categorie }}</a>
       </li>
     {% endfor %}
   </ul>

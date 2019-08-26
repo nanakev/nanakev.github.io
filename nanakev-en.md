@@ -2,6 +2,7 @@
 layout: page
 title: Nana & Kev
 ref: nana-kev
+permalink: en/nana-kev
 lang: en
 ---
 

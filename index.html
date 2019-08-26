@@ -17,10 +17,11 @@ lang: de
         <h2>
           <a class="post-link" href="{{ post.url}}">{{ post.title }}</a>
         </h2>
+        <a class="post-meta" href="{{ site.url }}/{{post.lang}}/{{post.categorie}}">{{ post.categorie }}</a>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
 
 </div>
