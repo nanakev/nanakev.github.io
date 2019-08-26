@@ -7,21 +7,20 @@
 
 # Site settings
 title:
-  en: Welcome! :)
-  de: Willkommen! :)
+  en: Nana & Kev's Awesome Homepage
+  de: Nana & Kev's Unglaubliche Homepage
 email: kevnana@gmx.de
 description:
-  en: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-  de: Dies ist eine unglaublich coole Beschreibung der Seite auf deutsch.
+  en: A little homepage from Nana & Kev.
+  de: Eine kleine Homepage von Nana & Kev.
 index:
-  en: nanakev-en.html
+  en: en/index
   de:
-feed:
-  en: /feed.xml
-  de: /flux.xml
 url: "http://nanakev.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+twitter_username: 
 github_username:  nanakev
+plugins:
+  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown

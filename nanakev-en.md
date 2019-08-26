@@ -6,16 +6,17 @@ permalink: en/nana-kev
 lang: en
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<ul class="post-list">
+    {% assign posts=site.posts | where:"lang", page.lang  | where:"categorie", page.ref %}
+    {% for post in posts %}
+      <li>
 
-You can find this multilanguage theme at :
-{% include icon-github.html username="sylvaindurand" %} /
-[multilingual-jekyll](https://github.com/sylvaindurand/multilingual-jekyll)
+        <h2>
+          <a class="post-link" href="{{ post.url}}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{post.content}}
 
-You can find the original source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+      </li>
+    {% endfor %}
+  </ul>
