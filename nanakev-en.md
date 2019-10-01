@@ -4,6 +4,7 @@ title: Nana & Kev
 ref: nana-kev
 permalink: en/nana-kev
 lang: en
+order: 3
 ---
 
 <ul class="post-list">
