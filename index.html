@@ -7,21 +7,30 @@ redirect_from: "./"
 ---
 
 <div class="home">
+  <table>
+    <tr>
+      <th>
 
-  <h1 class="page-heading">Posts</h1>
+        <h1 class="page-heading">Posts</h1>
+        
+        <ul class="post-list">
+          {% assign posts=site.posts | where:"lang", page.lang %}
+          {% for post in posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <ul class="post-list">
-    {% assign posts=site.posts | where:"lang", page.lang %}
-    {% for post in posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url}}">{{ post.title }}</a>
-        </h2>
-        <a class="post-meta" href="{{ site.url }}/{{post.lang}}/{{post.categorie}}">{{ post.categorie }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+              <h2>
+                <a class="post-link" href="{{ post.url}}">{{ post.title }}</a>
+              </h2>
+              <a class="post-meta" href="{{ site.url }}/{{post.lang}}/{{post.categorie}}">{{ post.categorie }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </th>
+      <th>
+        <img src='/assets/img/kiss.jpeg' alt="Iva gives Yuri a Kiss :3">
+      </th>
+    </tr>
+  </table>
 
 </div>
